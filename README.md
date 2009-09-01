@@ -8,8 +8,8 @@ Handles the scripting for a common UI layout: the tabbed box. If you have a set 
 Requirements
 ------------
 
-* [MooTools Core](http://mootools.net/core): Element.Event, Fx.Tween, Fx.Morph (and their dependencies)
-* [MooTools More](http://mootools.net/more): Element.Shortcuts, Element.Dimensions, Element.Measure (and their dependencies)
+* [MooTools Core 1.2.3](http://mootools.net/core): Element.Event, Fx.Tween, Fx.Morph (and their dependencies)
+* [MooTools More 1.2.3.1](http://mootools.net/more): Element.Shortcuts, Element.Dimensions, Element.Measure (and their dependencies)
 
 How to use
 ----------
