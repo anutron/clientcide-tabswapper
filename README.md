@@ -146,5 +146,3 @@ Shows a given section (as if the user clicked the tab).
 [$$]: http://www.mootools.net/docs/core/Element/Element#dollars
 [Options]: http://www.mootools.net/docs/core/Class/Class.Extras#Options
 [Events]: http://www.mootools.net/docs/core/Class/Class.Extras#Events
-
-[See the full documentation for details](http://clientcide.com/docs/Layout/TabSwapper).
