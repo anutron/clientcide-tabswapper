@@ -1,0 +1,10 @@
+name:           TabSwapper
+author:         anutron
+#current:       0.1
+category:       InterFace
+tags:           [console, debug]
+docs:           http://clientcide.com/docs/Layout/TabSwapper
+demo:           http://www.clientcide.com/wiki/cnet-libraries/08-layout/05-tabswapper
+# requires:
+#   - { package: 'some-plugin', version: '0.1' }
+#   - { package: 'http://external-plugin.com' }	
