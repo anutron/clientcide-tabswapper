@@ -3,7 +3,7 @@ TabSwapper - a basic tabs widget
 
 Handles the scripting for a common UI layout: the tabbed box. If you have a set of DOM elements that are going to toggle visibility based on the related tabs above them (they don't have to be above, but usually are) you can instantiate a TabSwapper and it's handled for you.
 
-![Screenshot](http://www.clientcide.com/art/forge/TabSwapper.png)
+![Screenshot](http://github.com/anutron/clientcide-tabswapper/blob/master/screenshot.png)
 
 Requirements
 ------------
