@@ -6,8 +6,8 @@ authors:
  - Aaron Newton
 license: MIT-Style License
 requires:
- - core/1.2.4: [Element.Event, Fx.Tween, Fx.Morph]
- - more/1.2.4.2: [Element.Shortcuts, Element.Dimensions, Element.Measure]
+ core/1.2.4: [Element.Event, Fx.Tween, Fx.Morph]
+ more/1.2.4.2: [Element.Shortcuts, Element.Dimensions, Element.Measure]
 provides:
  - TabSwapper
 ...
