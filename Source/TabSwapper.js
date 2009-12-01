@@ -19,8 +19,7 @@ requires:
   - Element.Dimensions
   - Element.Measure
 
-provides:
- - TabSwapper
+provides: [TabSwapper]
 
 ...
 */
