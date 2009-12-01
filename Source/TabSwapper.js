@@ -10,12 +10,14 @@ authors: Aaron Newton
 license: MIT-Style License
 
 requires:
- - core/1.2.4:Element.Event
- - core/1.2.4:Fx.Tween
- - core/1.2.4:Fx.Morph
- - more/1.2.4.2:Element.Shortcuts
- - more/1.2.4.2:Element.Dimensions
- - more/1.2.4.2:Element.Measure
+ - core/1.2.4:
+  - Element.Event
+  - Fx.Tween
+  - Fx.Morph
+ - more/1.2.4.2:
+  - Element.Shortcuts
+  - Element.Dimensions
+  - Element.Measure
 
 provides:
  - TabSwapper
