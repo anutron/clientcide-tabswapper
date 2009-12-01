@@ -1,9 +1,7 @@
-name:           TabSwapper
-author:         anutron
-#current:       0.1
-category:       InterFace
-tags:           [tabs]
-docs:           http://clientcide.com/docs/Layout/TabSwapper
-demo:           http://www.clientcide.com/wiki/cnet-libraries/08-layout/05-tabswapper
-#requires:
-#   - { package: 'mootools-core', version: '1.2.3' }
+name:         TabSwapper
+author:       anutron
+#current:     0.1
+category:     InterFace
+tags:         [tabs]
+docs:         http://clientcide.com/docs/Layout/TabSwapper
+demo:         http://www.clientcide.com/wiki/cnet-libraries/08-layout/05-tabswapper

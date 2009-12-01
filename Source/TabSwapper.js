@@ -1,10 +1,25 @@
 /*
-Script: TabSwapper.js
+---
 
-Handles the scripting for a common UI layout; the tabbed box.
+name: TabSwapper.js
 
-License:
-	http://www.clientcide.com/wiki/cnet-libraries#license
+description: Handles the scripting for a common UI layout; the tabbed box.
+
+license: http://www.clientcide.com/wiki/cnet-libraries#license
+
+requires:
+ - core:1.2.4/
+ - core:1.2.4/Element.Event
+ - core:1.2.4/Fx.Tween
+ - core:1.2.4/Fx.Morph
+ - more:1.2.4.2/Element.Shortcuts
+ - more:1.2.4.2/Element.Dimensions
+ - more:1.2.4.2/Element.Measure
+
+provides:
+- TabSwapper
+
+...
 */
 var TabSwapper = new Class({
 	Implements: [Options, Events],
@@ -116,7 +131,7 @@ var TabSwapper = new Class({
 		if (!$chk(this.now)) {
 			this.tabs.each(function(tab, idx){
 				if (i != idx) 
-					this.hideSection(idx)
+					this.hideSection(idx);
 			}, this);
 		}
 		this.showSection(i).save(i);
@@ -148,8 +163,7 @@ var TabSwapper = new Class({
 		if (!tab) return this;
 		var sect = tab.retrieve('section');
 		if (!sect) return this;
-		var smoothOk = this.options.smooth && (!Browser.Engine.trident4 
-										|| (Browser.Engine.trident4 && !Browser.Engine.trident4));
+		var smoothOk = this.options.smooth && !Browser.Engine.trident4;
 		if (this.now != idx) {
 			if (!tab.retrieve('tabFx')) 
 				tab.store('tabFx', new Fx.Morph(sect, this.options.effectOptions));
@@ -164,8 +178,7 @@ var TabSwapper = new Class({
 				effect = {opacity: 1};
 			} else if (sect.getStyle('opacity').toInt() < 1) {
 				sect.setStyle('opacity', 1);
-				if (!this.options.smoothSize) 
-					this.fireEvent('onActiveAfterFx', [idx, sect, tab]);
+				if (!this.options.smoothSize) this.fireEvent('onActiveAfterFx', [idx, sect, tab]);
 			}
 			if (this.options.smoothSize) {
 				var size = sect.getDimensions().height;
@@ -181,9 +194,10 @@ var TabSwapper = new Class({
 				tab.retrieve('tabFx').start(effect).chain(function(){
 					this.fireEvent('onActiveAfterFx', [idx, sect, tab]);
 					sect.setStyles({
-						height: "auto",
+						height: this.options.maxSize == effect.height ? this.options.maxSize : "auto",
 						overflow: overflow
 					});
+					sect.getElements('input, textarea').setStyle('opacity', 1);
 				}.bind(this));
 			}
 			this.now = idx;
