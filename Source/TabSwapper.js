@@ -1,14 +1,9 @@
 /*
 ---
-
 name: TabSwapper.js
-
 description: Handles the scripting for a common UI layout; the tabbed box.
-
 authors: Aaron Newton
-
 license: MIT-Style License
-
 requires:
   - core/1.2.4:
     - Element.Event
@@ -18,9 +13,8 @@ requires:
     - Element.Shortcuts
     - Element.Dimensions
     - Element.Measure
-
-provides: TabSwapper
-
+provides:
+  - TabSwapper
 ...
 */
 var TabSwapper = new Class({
