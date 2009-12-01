@@ -16,8 +16,7 @@ requires:
  - more:1.2.4.2/Element.Dimensions
  - more:1.2.4.2/Element.Measure
 
-provides:
-- TabSwapper
+provides: [TabSwapper]
 
 ...
 */
